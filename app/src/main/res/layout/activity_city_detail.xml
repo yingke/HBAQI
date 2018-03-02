@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CityDetailActivity">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@android:color/white"
+               android:padding="10dp"
+               android:layout_marginBottom="2dp">
+               <TextView
+                   android:id="@+id/tv_city_Intro"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="14sp"
+                   android:text="空气质量可接受，但某些污染物可能对极少数异常敏感人群健康有较弱的影响"
+                   android:layout_margin="5dp"
+                   android:paddingLeft="10dp"/>
+               <TextView
+                   android:id="@+id/tv_city_Tips"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:text="建议：极少数敏感人群应减少户外活动"
+                   android:layout_margin="5dp"
+                   android:paddingLeft="10dp"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                   android:text="主要污染物   单位:μg/m3"
+                   android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:paddingTop="10dp"
+                   >
+                    <TextView
+                        android:id="@+id/tv_city_pm25"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="PM2.5 : 255"
+                        android:paddingLeft="24dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_city_pm10"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="pm10:156"
+                        android:paddingLeft="24dp" />
+
+                    <TextView
+                        android:id="@+id/tv_city_so2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="SO2:1660"
+                        android:paddingLeft="24dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:paddingTop="10dp"
+
+                    android:layout_marginBottom="2dp">
+                    <TextView
+                        android:id="@+id/tv_city_co"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="CO : 255"
+                        android:paddingLeft="24dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_city_NO2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="NO2:156"
+                        android:paddingLeft="24dp" />
+
+                    <TextView
+                        android:id="@+id/tv_city_o3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="O3:1660"
+                        android:paddingLeft="24dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:id="@+id/pointer_rl">
+
+       </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

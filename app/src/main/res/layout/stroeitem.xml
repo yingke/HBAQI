@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+<TextView
+    android:id="@+id/store"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@color/itembc"
+    android:gravity="center"
+    android:text="1"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="24dp"
+
+    tools:layout_width="40dp"
+    />
+
+<TextView
+    android:id="@+id/cityname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="石家庄"
+    android:textSize="16sp"
+    tools:layout_editor_absoluteX="70dp"
+    tools:layout_editor_absoluteY="35dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/aqi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="AQI:180"
+    android:textSize="16sp"
+    tools:layout_editor_absoluteX="138dp"
+    tools:layout_editor_absoluteY="35dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/maxpoll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="主要污染物:PM2.5"
+    android:textSize="16sp"
+    tools:layout_editor_absoluteX="218dp"
+    tools:layout_editor_absoluteY="35dp"
+    tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
